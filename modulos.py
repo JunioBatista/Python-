@@ -4,6 +4,7 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import time as t 
+from tkinter import *
 
 #criação do objeto de mensagem
 msg = MIMEMultipart()
@@ -54,4 +55,32 @@ indice 8 --> tm_isdst --> 0,1 ou -1
 indice 9 --> tm_zone --> Abreviação do nome da timezone"""
 
 
+#-------------------------------------------------------
+# criação de interface GUI com tkinter
+
+
+
+janelaPrincipal = Tk()
+janelaPrincipal.mainloop()
+
+texto = Label(master = janelaPrincipal, text = "Minha janela exibida")
+texto.place(x = 50, y = 100)
+janelaPrincipal.mainloop()
+
+
+def funcClicar():
+    print("Botão pressionado")
+
+janelaPrincipal = Tk()
+texto = Label(master = janelaPrincipal, text = "Minha janela exibida")
+texto.pack()
+
+pic = PhotoImage(file="logoEstacio.gif")
+logo = Label(master = janelaPrincipal, image = pic)
+logo.pack()
+
+botao = Button(master = janelaPrincipal, text = 'Clique', command = funcClicar)
+botao.pack()
+
+janelaPrincipal.mainloop()
 
