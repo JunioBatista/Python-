@@ -12,7 +12,6 @@ conta1.sacar(500)
 
 conta1.extrato.extrato(conta1.numero)
 
-#Sugestão: altere o programa do código anterior a fim de criar mais uma conta para dois clientes diferentes. Como desafio, tente, por meio do objeto conta, imprimir o nome e o endereço dos clientes associados às contas.
 c_wedson = Cliente(12341, 'Wedson', 'rua das palmeiras')
 c_joaquina = Cliente(12341, 'joaquina', 'rua das palmeiras')
 
