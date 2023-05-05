@@ -1,0 +1,44 @@
+# script funcao_filtro_iterable.py
+lista = [1, 2, 3, 4, 5]
+
+def impares(iterable):
+    lista_aux = []
+    for item in iterable:
+        if item % 2 != 0:
+            lista_aux.append(item)
+    return lista_aux
+
+def main():
+    nova_lista = impares(lista)
+    print(nova_lista)
+
+if __name__ == "__main__":
+    main()
+
+########################
+
+# script funcao_filter.py
+lista = [1, 2, 3, 4, 5]
+ 
+def impar(item):
+    return item % 2 != 0
+
+def main():
+    nova_lista = filter(impar, lista)
+    print(list(nova_lista))
+ 
+if __name__ == "__main__":
+    main()
+
+########################
+
+# script funcao_filter_lambda.py
+lista = [1, 2, 3, 4, 5]
+
+nova_lista = filter(lambda item: item % 2 != 0, lista)
+
+def main():
+    print(list(nova_lista))
+
+if __name__ == "__main__":
+    main()
