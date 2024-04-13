@@ -17,8 +17,8 @@ def check_versions():
     print("[hello_world.py] CEF python {ver}".format(ver=ver["version"]))
     print("[hello_world.py] Chromium {ver}".format(ver=ver["chrome_version"]))
     print("[hello_world.py] CEF {ver}".format(ver=ver["cef_version"]))
-    print("[hello_world.py] python {ver}){arch}".format(ver=platform.python_version(),arch=platform.architecture()[0])) assert
-    cef.__version__>= "57.0", "CEF python v57.0+ required to run this"
+    print("[hello_world.py] python {ver}){arch}".format(ver=platform.python_version(),arch=platform.architecture()[0])) 
+    assert cef.__version__>= "57.0", "CEF python v57.0+ required to run this"
 
 
 if __name__ == '__main__':
